@@ -1,0 +1,120 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(49, 82, 82);
+}
+
+header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(33, 138, 33);
+}
+
+header nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 6.440rem;
+    background-color: rgb(234, 255, 234);
+    width: max-content;
+    padding: 2rem 2rem;
+
+}
+
+header nav.active {
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+header nav ul a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(33, 138, 33);
+}
+
+header .hamburger {
+    width: 20px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 2px;
+}
+
+header .hamburger div {
+    background-color: rgb(231, 242, 252);
+    width: 16px;
+    height: 2px;
+}
+
+header .conteiner {
+    position: relative;
+    background-color: rgb(230, 255, 180);
+    width: 60px;
+    height: 26px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+header .conteiner .toggle {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    position: absolute;
+    transform: scale(.7);
+    border-radius: 25px;
+}
+
+header .conteiner .toggle.active {
+    left: 34px;
+}
+
+header .conteiner .bi-brightness-high {
+    font-size: 26px;
+}
+
+header .conteiner .bi-brightness-high.active {
+    display: none;
+}
+
+header .conteiner .bi-moon-stars {
+    display: none;
+    font-size: 26px;
+}
+
+header .conteiner .bi-moon-stars.active {
+    display: block;
+}
+
+body.active header {
+    background-color: indigo;
+}
+
+body.active h1 {
+    color: white;
+}
+
+body.active nav ul a {
+    color: blue;
+}
